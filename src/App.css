@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+* {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+:root {
+    --label-gray: #8b8b8b;
+    --input-bg-gray: #ebebeb;
+    --input-text-gray: #686868;
+    --hover-gray: #cecece;
+    --input-text-light-gray: #f5f5f5;
+    --css-gray: #333333;
+}
+
+.App {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--input-text-light-gray);
+    max-height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* max-width: 100%; */
+}
+
+.container {
+    display: inline-flex;
+    padding: 20px 50px 0px 50px;
+    justify-content: space-around;
+    width: auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    background-color: var(--input-bg-gray);
+    color: var(--input-text-gray);
+    border: none;
+    margin: 3px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: inset 2px 2px 7px var(--input-text-gray);
+    border-radius: 5px;
+    outline: none;
+}
+
+h2 {
+    color: var(--label-gray);
+    text-align: left;
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    font-weight: 600;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.left {
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    flex-grow: 1;
+}
+
+.color-picker {
+    display: flex;
+}
+
+.color-picker-left {
+    flex-grow: 1;
+}
+
+.color-picker-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.MuiButtonBase-root p {
+    font-size: 15px;
+}
+
+.MuiButtonBase-root {
+    border-radius: 20px !important;
+}
+
+.MuiFormGroup-root {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: -13px;
+}
+
+.MuiTypography-body1 {
+    font-weight: 600 !important;
+    color: var(--label-gray) !important;
+    font-family: 'Poppins' !important;
+    margin-left: 2px !important;
+}
