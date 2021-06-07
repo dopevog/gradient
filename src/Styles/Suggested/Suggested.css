@@ -1,0 +1,39 @@
+.suggested-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.suggested-content {
+    display: flex;
+}
+
+.suggested-header {
+    display: flex;
+    align-items: center;
+}
+
+.suggested-icon-container {
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    height: 23px;
+    width: 23px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggested-icon-container svg {
+    transition: transform 0.1s;
+}
+
+.suggested-icon-container:hover {
+    background-color: var(--hover-gray);
+}
+
+.suggested-icon-container:hover svg {
+    transform: scale(1.1);
+}

@@ -1,0 +1,7 @@
+.colorslide-container {
+    height: 250px;
+    width: 20px;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}

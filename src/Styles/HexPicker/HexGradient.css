@@ -1,0 +1,48 @@
+.hexgradient-container {
+    height: 250px;
+    width: 250px;
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.hexgradient-white,
+.hexgradient-black {
+    border-radius: 5px;
+}
+
+.hexgradient-base {
+    border-radius: 8px 5px 5px 5px;
+}
+
+.hexgradient-base,
+.hexgradient-white,
+.hexgradient-black {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.hexgradient-white {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hexgradient-black {
+    background: linear-gradient(to bottom, transparent 0%, #000 100%);
+}
+
+.sl-slider {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: var(--input-text-light-gray);
+    box-shadow: 2px 2px 7px black;
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.sl-slider:hover {
+    background-color: var(--hover-gray);
+}

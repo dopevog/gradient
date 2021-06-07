@@ -1,0 +1,23 @@
+.downloadbutton-container {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 40px;
+    box-shadow: 2px 2px 7px black;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 40px;
+    background-color: var(--input-text-light-gray);
+}
+
+.downloadbutton-container:hover {
+    background-color: var(--hover-gray);
+}
+
+.downloadbutton-container:hover svg {
+    transform: scale(1.1);
+}
+
+.downloadbutton-container svg {
+    transition: transform 0.1s;
+}

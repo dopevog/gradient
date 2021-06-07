@@ -1,0 +1,36 @@
+.center-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 3px;
+    margin-left: -3px;
+}
+
+.center-grid {
+    margin-left: 5px;
+    display: grid;
+    height: 40px;
+    width: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    cursor: pointer;
+}
+
+.center-grid-item {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--label-gray);
+    box-sizing: content-box;
+}
+
+.center-grid-item:hover {
+    background-color: var(--hover-gray);
+}
+
+.center-grid-item-selected {
+    height: 100%;
+    width: 100%;
+    background-color: var(--hover-gray);
+    border: 0.5px solid var(--label-gray);
+}

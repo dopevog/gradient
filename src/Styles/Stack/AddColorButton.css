@@ -1,0 +1,44 @@
+.add-color-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-color-container p {
+    color: var(--input-text-gray);
+}
+
+.add-color-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px 5px 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 7px var(--input-text-gray);
+    width: 130px;
+    cursor: pointer;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.add-color-button-disabled {
+    display: none;
+}
+
+.add-color-button:hover {
+    background-color: var(--hover-gray);
+}
+
+.add-color-button:hover svg {
+    transform: scale(1.1);
+}
+
+.add-color-button:hover p {
+    font-weight: 600;
+}
+
+.add-color-button svg {
+    transition: transform 0.1s;
+}

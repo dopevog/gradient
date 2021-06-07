@@ -1,0 +1,31 @@
+.css-container {
+    margin-top: 15px;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.css-content {
+    height: 154px;
+}
+
+.css-content textarea {
+    background: var(--css-gray);
+    color: var(--input-text-light-gray);
+    text-align: left;
+    font-family: monospace;
+    padding: 20px;
+    font-size: 12px;
+    width: 350px;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.css-container:hover .copybutton-container {
+    display: flex;
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}

@@ -1,0 +1,10 @@
+.hexpicker-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.hexpicker-bottom {
+    display: flex;
+    margin: 20px 0px;
+}

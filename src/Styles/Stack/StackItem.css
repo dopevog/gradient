@@ -1,0 +1,78 @@
+.stackitem-container {
+    display: grid;
+    grid-template-columns: 10% 55% 25% 10%;
+    width: auto;
+    grid-template-rows: 100%;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 5px;
+    opacity: 0.999;
+    position: relative;
+
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.stackitem-drag svg,
+.stackitem-close svg {
+    transition: transform 0.1s;
+}
+
+.stackitem-close svg {
+    cursor: pointer;
+}
+
+.stackitem-drag svg {
+    cursor: move;
+}
+
+.stackitem-drag svg:hover,
+.stackitem-close svg:hover {
+    transform: scale(1.15);
+}
+
+.stackitem-container input {
+    height: 40px;
+    font-size: 15px;
+    width: 90%;
+    margin: 7px;
+}
+
+.stackitem-icon-container {
+    width: 48px;
+}
+
+.stackitem-drag,
+.stackitem-close,
+.stackitem-no-close {
+    display: none;
+}
+
+.stackitem-container:hover .stackitem-drag,
+.stackitem-container:hover .stackitem-close,
+.stackitem-container:hover .stackitem-no-close,
+.stackitem-selected .stackitem-drag,
+.stackitem-selected .stackitem-close,
+.stackitem-selected .stackitem-no-close {
+    display: flex;
+    align-items: center;
+}
+
+.stackitem-no-close {
+    cursor: not-allowed !important;
+}
+
+.stackitem-container:hover {
+    background-color: var(--hover-gray);
+}
+
+.stackitem-selected {
+    background-color: var(--hover-gray);
+    border-radius: 5px;
+}
+
+.stackitem-dark input {
+    color: var(--input-text-light-gray);
+}

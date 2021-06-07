@@ -1,0 +1,28 @@
+.copybutton-container {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 2px 2px 7px black;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 40px;
+    background-color: var(--input-text-light-gray);
+
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.copybutton-container:hover {
+    background-color: var(--hover-gray);
+}
+
+.copybutton-container:hover svg {
+    transform: scale(1.1);
+}
+
+.copybutton-container svg {
+    transition: transform 0.1s;
+}

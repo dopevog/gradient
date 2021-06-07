@@ -1,0 +1,38 @@
+.currentcolor-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.currentcolor-content {
+    display: flex;
+    margin: 0px 0px;
+}
+
+.currentcolor-colorbox {
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+}
+
+.currentcolor-info {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 25% 25% 25%;
+    width: 130px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.currentcolor-info p {
+    text-align: right;
+    color: var(--label-gray);
+    font-weight: 600;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.currentcolor-info input {
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}

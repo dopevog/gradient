@@ -1,0 +1,23 @@
+.copyconfirmation-container {
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.copyconfirmation-content {
+    display: flex;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px var(--input-text-gray);
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyconfirmation-content p {
+    color: var(--input-text-gray);
+    margin-left: 5px;
+}

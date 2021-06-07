@@ -1,0 +1,42 @@
+.suggesteditem-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.suggesteditem-container p {
+    color: var(--input-text-gray);
+}
+
+.suggesteditem-container:hover p {
+    font-weight: 600;
+}
+
+.suggesteditem-colorbox {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.suggesteditem-container:hover {
+    background-color: var(--hover-gray);
+}
+
+.suggesteditem-selected {
+    border-radius: 5px;
+    background-color: var(--hover-gray);
+}
+
+.suggesteditem-selected p {
+    font-weight: 600;
+}
