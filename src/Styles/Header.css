@@ -1,0 +1,32 @@
+.header-container {
+    height: auto;
+    background-color: #fafafa;
+    display: flex;
+    padding: 5px 50px;
+    align-items: center;
+}
+
+.header-container h1 {
+    background: linear-gradient(45deg, #87cefa 0%, #da71d6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-container img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.header-container p {
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--label-gray);
+    margin-bottom: 15px;
+}
